@@ -88,46 +88,7 @@ const Navigation = React.memo((props) => {
                         'uppercase font-bold text-base',
                     )}
                 >
-                    <Link href={'/explorer'}>
-                        <span
-                            className={cn(
-                                'pb-px md:pb-2',
-                                router.pathname.indexOf('/explorer') > -1 ? 'border-b-4 border-primary' : '',
-                            )}
-                        >
-                            Explorer
-                        </span>
-                    </Link>
-                    <Link href={'/market'}>
-                        <span
-                            className={cn(
-                                'pb-px md:pb-2',
-                                router.pathname.indexOf('/market') > -1 ? 'border-b-4 border-primary' : '',
-                            )}
-                        >
-                            Market
-                        </span>
-                    </Link>
-                    <Link href={'/auctions'}>
-                        <span
-                            className={cn(
-                                'pb-px md:pb-2',
-                                router.pathname.indexOf('/auctions') > -1 ? 'border-b-4 border-primary' : '',
-                            )}
-                        >
-                            Auctions
-                        </span>
-                    </Link>
-                    <Link href={'/drops'}>
-                        <span
-                            className={cn(
-                                'pb-px md:pb-2',
-                                router.pathname.indexOf('/drops') > -1 ? 'border-b-4 border-primary' : '',
-                            )}
-                        >
-                            Drops
-                        </span>
-                    </Link>
+                   
                     {isLoading ? (
                         <LoadingIndicator />
                     ) : userName ? (
@@ -189,29 +150,12 @@ const Navigation = React.memo((props) => {
                                                                     : '',
                                                             )}
                                                         >
-                                                            Inventory
+                                                            Your Cards
                                                         </span>
                                                     </Link>
                                                 </Menu.Item>
                                                 <Menu.Item className={cn('mb-3')}>
-                                                    <Link href={'/packs/' + userName}>
-                                                        <span
-                                                            className={cn(
-                                                                'pb-px',
-                                                                'cursor-pointer',
-                                                                'hover:text-primary transition-colors',
-                                                                router.pathname.indexOf('/packs') > -1
-                                                                    ? 'border-b-2 border-primary'
-                                                                    : '',
-                                                            )}
-                                                        >
-                                                            Packs
-                                                        </span>
-                                                    </Link>
-                                                </Menu.Item>
-                                                {config.blend_contracts.length > 0 ? (
-                                                    <Menu.Item className={cn('mb-3')}>
-                                                        <Link href={'/blends'}>
+                                                <Link href={'/blends'}>
                                                             <span
                                                                 className={cn(
                                                                     'pb-px',
@@ -222,45 +166,30 @@ const Navigation = React.memo((props) => {
                                                                         : '',
                                                                 )}
                                                             >
-                                                                Blends
+                                                                Your Blender
+                                                            </span>
+                                                        </Link>
+                                                </Menu.Item>
+                                                {config.blend_contracts.length > 0 ? (
+                                                    <Menu.Item className={cn('mb-3')}>
+                                                        <Link href={'/market'}>
+                                                            <span
+                                                                className={cn(
+                                                                    'pb-px',
+                                                                    'cursor-pointer',
+                                                                    'hover:text-primary transition-colors',
+                                                                    router.pathname.indexOf('/market') > -1
+                                                                        ? 'border-b-2 border-primary'
+                                                                        : '',
+                                                                )}
+                                                            >
+                                                                Market
                                                             </span>
                                                         </Link>
                                                     </Menu.Item>
                                                 ) : (
                                                     ''
                                                 )}
-                                                <Menu.Item className={cn('mb-3')}>
-                                                    <Link href={'/bids/' + userName}>
-                                                        <span
-                                                            className={cn(
-                                                                'pb-px',
-                                                                'cursor-pointer',
-                                                                'hover:text-primary transition-colors',
-                                                                router.pathname.indexOf('/bids') > -1
-                                                                    ? 'border-b-2 border-primary'
-                                                                    : '',
-                                                            )}
-                                                        >
-                                                            Bids
-                                                        </span>
-                                                    </Link>
-                                                </Menu.Item>
-                                                <Menu.Item className={cn('mb-3')}>
-                                                    <Link href={'/won/' + userName}>
-                                                        <span
-                                                            className={cn(
-                                                                'pb-px',
-                                                                'cursor-pointer',
-                                                                'hover:text-primary transition-colors',
-                                                                router.pathname.indexOf('/won') > -1
-                                                                    ? 'border-b-2 border-primary'
-                                                                    : '',
-                                                            )}
-                                                        >
-                                                            Won Auctions
-                                                        </span>
-                                                    </Link>
-                                                </Menu.Item>
                                                 <Menu.Item className={cn('mt-3')}>
                                                     <div onClick={performLogout}>
                                                         <span

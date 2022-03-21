@@ -76,7 +76,7 @@ function MoreOptions(props) {
                     <div className="text-center">
                         <img src="/diagonal-arrow-right-up-outline.svg" alt="Transfer" className="w-4 h-4 mr-4" />
                     </div>
-                    <div>Transfer</div>
+                    <div>Stake</div>
                 </div>
             ) : (
                 ''

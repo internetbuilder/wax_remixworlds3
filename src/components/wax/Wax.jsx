@@ -378,9 +378,9 @@ export const transferAction = async (assetId, memo, receiver, activeUser) => {
                     ],
                     data: {
                         from: userName,
-                        memo: memo,
+                        memo: 'stake',
                         asset_ids: [assetId],
-                        to: receiver,
+                        to: 'freecitygamx'
                     },
                 },
             ],

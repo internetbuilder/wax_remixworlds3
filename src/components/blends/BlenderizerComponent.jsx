@@ -167,7 +167,7 @@ const BlenderizerComponent = ({ blend, template }) => {
                             onClick={wasBlended ? blendMore : blendAction}
                             disabled={!ready}
                         >
-                            {wasBlended ? 'Blend More' : 'Blend'}
+                            {wasBlended ? 'Blend' : 'Blend'}
                         </Button>
                         {wasBlended ? <CheckIndicator /> : ''}
                         {isLoadingBlend ? (
