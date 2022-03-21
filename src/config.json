@@ -1,9 +1,9 @@
 {
     "ipfs": "https://ipfs.hivebp.io/ipfs/",
     "atomic_api": "https://test.hivebp.io",
-    "market_name": "dummymarket1",
+    "market_name": "remixworlds1",
     "market_url": "https://waxdummymarket.com",
-    "default_collection": "official.wax",
+    "default_collection": "freecitygame",
     "api_endpoint": "https://api.hivebp.io",
     "limit": 12,
     "drops_contract": "neftyblocksd",
