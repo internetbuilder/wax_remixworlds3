@@ -98,109 +98,40 @@ function AuctionWindow(props) {
                 src="/close_btn.svg"
                 alt="X"
             />
-            <div className="text-xl sm:text-2xl md:text-3xl mt-4 lg:mt-0 text-center">{name}</div>
-            <WindowContent image={image} video={video} collection={collection['name']} schema={schema['schema_name']} />
+            <div className="text-xl sm:text-2xl md:text-3xl mt-4 lg:mt-0 text-center">CLAIM YOUR RMX TOKEN</div>
             <div className="text-base sm:text-lg text-center my-0 md:my-4">
-                {`Are you sure you want to auction ${name} for ${formatNumber(sellPrice)} WAX?`}
+                {`You can claim only 1 time every 24 hours.`}
+            </div>
+            <div className="text-base sm:text-lg text-center my-0 md:my-4">
+                {`(Write "101" in the field to accept)`}
             </div>
             {error ? <ErrorMessage error={error} /> : ''}
+
+            
             <div className="relative">
-                <div className="flex flex-row">
-                    <div
-                        className={cn(
-                            'relative m-auto lg:mb-2 py-1 w-1/2 mr-4',
-                            'flex flex-row items-center justify-between flex-wrap',
-                        )}
-                    >
-                        <div className="flex items-center">Price</div>
+
+                
+            <div className={cn('relative m-auto lg:mb-10 py-0', 'flex flex-row items-center justify-evenly')}>
+                    
+                        <div className="flex items-center">100 + 1 =</div>
                         <div className={cn('flex flex-row', 'items-center')}>
                             <Input
                                 type="text"
                                 className="w-full bg-gray-700"
-                                placeholder="Price"
+                                placeholder="101"
                                 onChange={changePrice}
                                 value={sellPrice ? sellPrice : ''}
                             />
                         </div>
-                    </div>
-                    <div
-                        className={cn(
-                            'relative m-auto lg:mb-2 py-1 w-1/2',
-                            'flex flex-row items-center justify-between flex-wrap',
-                        )}
-                    >
-                        <div className="flex items-center">Days</div>
-                        <div className={cn('flex flex-row', 'items-center')}>
-                            <Input
-                                type="text"
-                                className="w-full bg-gray-700"
-                                placeholder="Days"
-                                onChange={changeDays}
-                                value={days ? days : ''}
-                            />
-                        </div>
-                    </div>
+                   
+                    
                 </div>
-                <div className="flex flex-row">
-                    <div
-                        className={cn(
-                            'relative m-auto lg:mb-2 py-1 w-1/2 mr-4',
-                            'flex flex-row items-center justify-between flex-wrap',
-                        )}
-                    >
-                        <div className="flex items-center">Hours</div>
-                        <div className={cn('flex flex-row', 'items-center')}>
-                            <Input
-                                type="text"
-                                className="w-full bg-gray-700"
-                                placeholder="Hours"
-                                onChange={changeHours}
-                                value={hours ? hours : ''}
-                            />
-                        </div>
-                    </div>
-                    <div
-                        className={cn(
-                            'relative m-auto lg:mb-2 py-1 w-1/2',
-                            'flex flex-row items-center justify-between flex-wrap',
-                        )}
-                    >
-                        <div className="flex items-center">Minutes</div>
-                        <div className={cn('flex flex-row', 'items-center')}>
-                            <Input
-                                type="text"
-                                className="w-full bg-gray-700"
-                                placeholder="Minutes"
-                                onChange={changeMinutes}
-                                value={minutes ? minutes : ''}
-                            />
-                        </div>
-                    </div>
-                </div>
+
+
+                
                 {collection['market_fee'] || collection['market_fee'] === 0 ? (
-                    <div
-                        className={cn(
-                            'flex flex-row justify-around',
-                            'p-5 mt-4 lg:mt-6',
-                            'border border-solid rounded-2xl border-gray-300',
-                        )}
-                    >
-                        <div className="flex flex-col justify-center items-center">
-                            <div>2%</div>
-                            <div>Market Fee</div>
-                        </div>
-                        <div className="flex flex-col justify-center items-center">
-                            <div>2%</div>
-                            <div>WAX Fee</div>
-                        </div>
-                        <div className="flex flex-col justify-center items-center">
-                            <div>{collection['market_fee'] * 100}%</div>
-                            <div>Collection Fee</div>
-                        </div>
-                        <div className="flex flex-col justify-center items-center">
-                            <div>{cut} WAX</div>
-                            <div>Your Cut</div>
-                        </div>
+                    <div>
+                        
                     </div>
                 ) : (
                     <LoadingIndicator />
@@ -208,7 +139,7 @@ function AuctionWindow(props) {
                 <div className={cn('relative m-auto mt-5 lg:mt-8 h-20 lg:h-8', 'flex justify-evenly lg:justify-end')}>
                     <WindowButton text="Cancel" onClick={cancel} className="text-neutral bg-paper border-neutral" />
                     <WindowButton
-                        text="Auction"
+                        text="Claim"
                         onClick={auction}
                         disabled={
                             !sellPrice ||
