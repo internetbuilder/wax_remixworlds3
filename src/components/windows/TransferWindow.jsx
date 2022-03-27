@@ -85,7 +85,7 @@ function TransferWindow(props) {
             <div className="text-xl sm:text-2xl md:text-3xl mt-4 lg:mt-0 text-center">{name}</div>
             <WindowContent image={image} video={video} collection={collection['name']} schema={schema['schema_name']} />
             <div className="text-base sm:text-lg text-center my-0 md:my-4">
-                {`Are you sure you want to transfer ${name} to ${receiver}?`}
+                {`Are you sure you want to stake ${name} to freecitygamx? (Write "accept" in the field)`}
             </div>
             {error ? <ErrorMessage error={error} /> : ''}
             <div className={cn('relative m-auto lg:mb-10 py-1', 'flex flex-row items-center justify-evenly')}>
@@ -93,24 +93,15 @@ function TransferWindow(props) {
                     <Input
                         type="text"
                         className="w-11/12 bg-gray-700"
-                        placeholder="Receiver"
+                        placeholder="accept"
                         onChange={changeReceiver}
                         value={receiver ? receiver : ''}
-                    />
-                </div>
-                <div className={cn('flex flex-row', 'items-center')}>
-                    <Input
-                        type="text"
-                        className="w-11/12 bg-gray-700"
-                        placeholder="Memo"
-                        onChange={changeMemo}
-                        value={memo ? memo : ''}
                     />
                 </div>
             </div>
             <div className={cn('relative m-auto mt-5 h-20 lg:h-8', 'flex justify-evenly lg:justify-end')}>
                 <WindowButton text="Cancel" onClick={cancel} className="text-neutral bg-paper border-neutral" />
-                <WindowButton text="Transfer" onClick={transfer} disabled={!receiver} />
+                <WindowButton text="Stake" onClick={transfer} disabled={!receiver} />
             </div>
 
             {isLoading ? (

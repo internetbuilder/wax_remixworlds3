@@ -58,10 +58,6 @@ function MoreOptions(props) {
             )}
             onMouseLeave={() => setShowMenu(false)}
         >
-            <ShareButton
-                type={'asset'}
-                link={config.market_url + (sale_id ? `/sale/${sale_id}` : `/asset/${asset_id}`)}
-            />
             {transferrable ? (
                 <div
                     className={cn(
@@ -95,7 +91,7 @@ function MoreOptions(props) {
                     <div className="text-center">
                         <img src="/pricetags-outline.svg" alt="Transfer" className="w-4 h-4 mr-4" />
                     </div>
-                    <div>Auction</div>
+                    <div>Claim</div>
                 </div>
             ) : (
                 ''

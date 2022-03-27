@@ -168,52 +168,29 @@ export const withdrawAction = async (quantity, activeUser) => {
 }
 
 export const announceAuctionAction = async (assetId, days, hours, minutes, quantity, activeUser) => {
-    const userName = activeUser['accountName']
-
-    await activeUser.signTransaction(
-        {
-            actions: [
-                {
-                    account: 'atomicmarket',
-                    name: 'announceauct',
-                    authorization: [
-                        {
-                            actor: userName,
-                            permission: activeUser['requestPermission'],
+        const userName = activeUser['accountName']
+    
+        await activeUser.signTransaction(
+            {
+                actions: [
+                    {
+                        account: 'freecitygamx',
+                        name: 'claimstake',
+                        authorization: [
+                            {
+                                actor: userName,
+                                permission: activeUser['requestPermission'],
+                            },
+                        ],
+                        data: {
+                            wallet: userName,
                         },
-                    ],
-                    data: {
-                        duration:
-                            (days ? parseInt(days) * 24 * 60 * 60 : 0) +
-                            (hours ? parseInt(hours) * 60 * 60 : 0) +
-                            (minutes ? parseInt(minutes) * 60 : 0),
-                        starting_bid: quantity.toFixed(8) + ' WAX',
-                        seller: userName,
-                        maker_marketplace: 'nft.hive',
-                        asset_ids: [assetId],
                     },
-                },
-                {
-                    account: 'atomicassets',
-                    name: 'transfer',
-                    authorization: [
-                        {
-                            actor: userName,
-                            permission: activeUser['requestPermission'],
-                        },
-                    ],
-                    data: {
-                        from: userName,
-                        memo: 'auction',
-                        asset_ids: [assetId],
-                        to: 'atomicmarket',
-                    },
-                },
-            ],
-        },
-        {
-            expireSeconds: 300,
-            blocksBehind: 0,
+                ],
+            },
+            {
+                expireSeconds: 300,
+                blocksBehind: 0,
         },
     )
 }
