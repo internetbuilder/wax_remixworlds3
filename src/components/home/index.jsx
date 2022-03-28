@@ -15,21 +15,44 @@ const Home = () => {
 <div class="text wrap">
 <center><br />
       <p><strong>Welcome on FreeCityGame, an easy to play P2E NFT game based on WAX blockchain.</strong></p><br />
+      <img src="/new-logo-freecity.png" alt="FreeCityGame"/>
+<p><strong>Interplanetary political power games
+    <br />
+    FreeCity will be the first city to be conquered in this fantastic multiverse.<br />
+    Blend NFT cards to generate higher value cards and stake any FreeCityGame nft to 
+    <br />
+    be avalaible to claim our RMX token one time every 24H.<br /> 
+    Reward depends on the total number of votes you have in your staked NFT cards.</strong></p>
+<br />
 <p><strong>How make money ?</strong></p>
     <div>
 
         <details>
-            <summary>Way 1: Blend card to generate higher value cards. (click to expense)</summary>
-            <p>Processor:<br />
-Intel Xeon E3-1270v6 - 4c/ 8t - 3.8GHz/ 4.2GHz<br />
-Private bandwidth: Not included</p>
+            <summary>Way 1: Blend card to generate higher value cards (click to expense)</summary>
+            <p><strong>We are creating a city with limited spaces, we have 4 levels of playing cards and each card has a vote value.<br />
+            So to start you will get 5x of the smallest card in the game, the vote card.<br />
+            The voting card costs around 0.25 WAX and has a value of 1 vote. With 5 vote cards you can blend it to generate 1 Citizen<br />
+            card and the Citizen Card costs around 10 WAX and has a value of 1 vote. This logic continues to generate the Home, Building, and Neighborhood cards.
+            <br />
+-Generate 1 <a href="https://wax.atomichub.io/market?collection_name=freecitygame&match=citizen&order=asc&sort=price&symbol=WAX" target="_blank" className="text-neutral bg-paper border-neutral">Citizen</a> card (Value: 10WAX/1VOTE) by blending 5 <a href="https://wax.atomichub.io/market?collection_name=freecitygame&match=vote&order=asc&sort=price&symbol=WAX" target="_blank" className="text-neutral bg-paper border-neutral">Vote</a> cards (Value: 1WAX/5VOTE)
+<br />
+-Generate 1 <a href="https://wax.atomichub.io/market?collection_name=freecitygame&match=home&order=asc&sort=price&symbol=WAX" target="_blank" className="text-neutral bg-paper border-neutral">Home</a> card (Value: 150WAX/100VOTE) by blending 5 <a href="https://wax.atomichub.io/market?collection_name=freecitygame&match=citizen&order=asc&sort=price&symbol=WAX" target="_blank" className="text-neutral bg-paper border-neutral">Citizen</a> cards (Value: 50WAX/5VOTE)
+<br />
+-Generate 1 <a href="https://wax.atomichub.io/market?collection_name=freecitygame&match=building&order=asc&sort=price&symbol=WAX" target="_blank" className="text-neutral bg-paper border-neutral">Building</a> card (Value: 500WAX/10000VOTE) by blending 5 <a href="https://wax.atomichub.io/market?collection_name=freecitygame&match=home&order=asc&sort=price&symbol=WAX" target="_blank" className="text-neutral bg-paper border-neutral">Home</a> cards (Value: 750WAX/500VOTE)
+<br />
+-Generate 1 <a href="https://wax.atomichub.io/market?collection_name=freecitygame&match=neighborhood&order=asc&sort=price&symbol=WAX" target="_blank" className="text-neutral bg-paper border-neutral">Neighborhood</a> card (Value: 1000WAX/10000VOTE) by blending 5 <a href="https://wax.atomichub.io/market?collection_name=freecitygame&match=building&order=asc&sort=price&symbol=WAX" target="_blank" className="text-neutral bg-paper border-neutral">Building</a> cards (Value: 2500WAX/50000VOTE)
+<br />
+All prices here are approximate and above all can change depending on the market.</strong> 
+<br /><br />
+</p>
 
         </details>
 
         <details>
             <summary>Way 2: Stake NFT card with high vote value (click to expense)</summary>
-            <p>
-            Stake any FREECITYGAME nft and you avalaible to claim one time every 24H. <br />Reward depends on the total number of votes you have in your staked nft cards.
+            <p><strong>Stake any <a href="https://wax.atomichub.io/explorer/collection/freecitygame" target="_blank" className="text-neutral bg-paper border-neutral">FREECITYGAME</a> nft and you avalaible to claim our <a href="https://wax.alcor.exchange/trade/rmx-remixgamingx_wax-eosio.token" target="_blank" className="text-neutral bg-paper border-neutral">RMX token</a> one time every 24H. <br />
+            <a href="https://wax.bloks.io/account/freecitygamx?loadContract=true&tab=Tables&account=freecitygamx&scope=freecitygamx&limit=100&table=users" target="_blank" className="text-neutral bg-paper border-neutral">Reward</a> depends on the total number of votes you have in your <a href="https://wax.bloks.io/account/freecitygamx?loadContract=true&tab=Tables&account=freecitygamx&scope=freecitygamx&limit=100&table=userstaking" target="_blank" className="text-neutral bg-paper border-neutral">staked NFT</a> cards. (1 vote = 0.01 RMX/24h).<br/>
+            The goal of this game is to earn a lot of money for our players. If this is not the case, we will rectify the situation ;)</strong>
             </p>
         </details>
 
@@ -44,31 +67,78 @@ Private bandwidth: Not included</p>
 
         <details>
             <summary>Way 1: Blend NFT card to generate higher value cards. (click to expense)</summary>
-            <p>Processor:<br />
-Intel Xeon E3-1270v6 - 4c/ 8t - 3.8GHz/ 4.2GHz<br />
-Private bandwidth: Not included</p>
-
+            <p><strong>To blend your NFT card you go to <a href="/blends" className="text-neutral bg-paper border-neutral">Your Blender</a> page and select the NFT card you want generate.<br />
+             (Make sure you have the ingredients NFT cards to generate your target NFT card. 
+            if not to <a href="https://wax.atomichub.io/market?collection_name=freecitygame&order=asc&schema_name=multiverse&sort=price&symbol=WAX"  target="_blank" className="text-neutral bg-paper border-neutral">buy it in the marketplace</a>)
+            </strong></p>
+            <br />
         </details>
 
         <details>
-            <summary>Way 2: Stake NFT card with high vote value (click to expense)</summary>
-            <p> Processor:<br />
-Intel 2x Xeon E5-2630v3 - 16c/ 32t - 2.4GHz/ 3.2GHz<br />
-Memory:
-128GB DDR4 ECC 1866MHz<br />
-Not included</p>
+            <summary>Way 2: Stake NFT card and claim every 24h (click to expense)</summary>
+            <p><strong>To stake your NFT card and claim your reward every 24 hours, you go to <a href="#" className="text-neutral bg-paper border-neutral">Your Cards</a> page and on any asset you can find the small button "...".
+            </strong></p>
+            <img src="/moreoption.png" alt="FreeCityGame"/>
+        </details>
+    </div>
+</center>
+</div>
+<br />
+<div class="text wrap">
+<center>
+<p><strong>About our RMX token?</strong></p>
+    <div>
+
+        <details>
+            <summary>General info (click to expense)</summary>
+            <p><strong>RMX Token
+            Total token supply: 1 billion<br />
+            Give out for user reward: 500 millions(50%)<br />
+            Token value: 1 WAX<br />
+            The token can buy our nft or futur partner nft<br />
+            The token is usable for all<br /><br />
+            See token smart contract on Bloks: <a href="https://wax.bloks.io/account/remixgamingx?loadContract=true&tab=Tables&account=remixgamingx&scope=remixgamingx&limit=100" target="_blank" className="text-neutral bg-paper border-neutral">wax.bloks.io</a>
+            <br />
+            See on Alcor market: <a href="https://wax.alcor.exchange/trade/rmx-remixgamingx_wax-eosio.token" target="_blank" className="text-neutral bg-paper border-neutral">wax.alcor.exchange</a>
+            <br /></strong></p>
+
+        </details>
+    </div>
+</center>
+</div>
+<br />
+<div class="text wrap">
+<center>
+<p><strong>About us?</strong></p>
+    <div>
+
+        <details>
+            <summary>Our plan (click to expense)</summary>
+            <p><strong>...</strong></p>
+            <br />
+        </details>
+
+        <details>
+            <summary>Contact us (click to expense)</summary>
+            <p><strong>Quebec enterprise number: (NEQ) 2277160562
+            <br />
+            Extra Sauce Studio
+            <br />             
+                21 rue de la pointe, saint-alphonse-rodriguez, J0K 1W0, Quebec, Canada
+                <br />
+                CEO: Jordan Bourbonnais
+                <br />
+                Telegram: <a href="https://t.me/remixworlds" target="_blank" className="text-neutral bg-paper border-neutral">https://t.me/remixworlds</a>
+                </strong></p>
+            
         </details>
 
     </div>
 </center>
 </div>
+<br />
             <div className={cn('container mx-auto my-20')}>
-            <center>
-                
-                <img src="/freecity-playtoearn-soon2.png" alt="FreeCityGame"/>
-                <h4>FreeCityGame</h4>
-                
-                </center>
+            <center></center>
             </div>
         </Page>
     )

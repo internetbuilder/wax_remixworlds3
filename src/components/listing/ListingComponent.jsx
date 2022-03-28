@@ -96,7 +96,7 @@ const ListingComponent = (props) => {
                 />
                 <div className="relative mt-20 mb-20 text-center">
                     <div className="m-auto h-1/4 leading-10">
-                        <a className="text-primary" href={`https://wax.atomichub.io/market/sale/${listing.sale_id}`}>
+                        <a className="text-primary" href={`https://wax.atomichub.io/market/sale/${listing.sale_id}`} target="_blank">
                             View on Atomichub
                         </a>
                     </div>

@@ -35,7 +35,7 @@ export const AssetComponent = (props) => {
                 </div>
                 <div className="mt-20 mb-20 leading-10 text-center">
                     <div className="relative h-1/2 t-0 m-auto">
-                        <a className="text-primary" href={`https://wax.atomichub.io/explorer/asset/${asset_id}`}>
+                        <a className="text-primary" href={`https://wax.atomichub.io/explorer/asset/${asset_id}`} target="_blank">
                             View on Atomichub
                         </a>
                     </div>
