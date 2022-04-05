@@ -52,7 +52,7 @@ All prices here are approximate and above all can change depending on the market
             <summary>Way 2: Stake NFT card with high vote value (click to expense)</summary>
             <p><strong>Stake any <a href="https://wax.atomichub.io/explorer/collection/freecitygame" target="_blank" className="text-neutral bg-paper border-neutral">FREECITYGAME</a> nft and you avalaible to claim our <a href="https://wax.alcor.exchange/trade/rmx-remixgamingx_wax-eosio.token" target="_blank" className="text-neutral bg-paper border-neutral">RMX token</a> one time every 24H. <br />
             <a href="https://wax.bloks.io/account/freecitygamx?loadContract=true&tab=Tables&account=freecitygamx&scope=freecitygamx&limit=100&table=users" target="_blank" className="text-neutral bg-paper border-neutral">Reward</a> depends on the total number of votes you have in your <a href="https://wax.bloks.io/account/freecitygamx?loadContract=true&tab=Tables&account=freecitygamx&scope=freecitygamx&limit=100&table=userstaking" target="_blank" className="text-neutral bg-paper border-neutral">staked NFT</a> cards. (1 vote = 0.01 RMX/24h).<br/>
-            The goal of this game is to earn a lot of money for our players. If this is not the case, we will rectify the situation ;)</strong>
+            The goal of this game is to earn a lot of RMX token for our players. If this is not the case, we will rectify the situation ;)</strong>
             </p>
         </details>
 
@@ -76,7 +76,7 @@ All prices here are approximate and above all can change depending on the market
 
         <details>
             <summary>Way 2: Stake NFT card and claim every 24h (click to expense)</summary>
-            <p><strong>To stake your NFT card and claim your reward every 24 hours, you go to <a href="#" className="text-neutral bg-paper border-neutral">Your Cards</a> page and on any asset you can find the small button "...".
+            <p><strong>To stake your NFT card and claim your reward every 24 hours, you go to Your Cards page and on any asset you can find the small button "...".
             </strong></p>
             <img src="/moreoption.png" alt="FreeCityGame"/>
         </details>
@@ -95,8 +95,10 @@ All prices here are approximate and above all can change depending on the market
             Total token supply: 1 billion<br />
             Give out for user reward: 500 millions(50%)<br />
             Token value: 1 WAX<br />
-            The token can buy our nft or futur partner nft<br />
-            The token is usable for all<br /><br />
+            With the RMX token you can buy the nfts of all games linked to RemixWorlds. 
+            <br />
+            You can also use the RMX token in-game in all games linked to RemixWorlds. 
+            <br /><br />
             See token smart contract on Bloks: <a href="https://wax.bloks.io/account/remixgamingx?loadContract=true&tab=Tables&account=remixgamingx&scope=remixgamingx&limit=100" target="_blank" className="text-neutral bg-paper border-neutral">wax.bloks.io</a>
             <br />
             See on Alcor market: <a href="https://wax.alcor.exchange/trade/rmx-remixgamingx_wax-eosio.token" target="_blank" className="text-neutral bg-paper border-neutral">wax.alcor.exchange</a>
@@ -114,7 +116,9 @@ All prices here are approximate and above all can change depending on the market
 
         <details>
             <summary>Our plan (click to expense)</summary>
-            <p><strong>...</strong></p>
+            <p><strong>Our plan is to create several NFT games so that they can <br />
+                interact together to create a multi-game platform nft on WAX <br />
+                blockchain and our RMX token </strong></p>
             <br />
         </details>
 
@@ -125,8 +129,6 @@ All prices here are approximate and above all can change depending on the market
             Extra Sauce Studio
             <br />             
                 21 rue de la pointe, saint-alphonse-rodriguez, J0K 1W0, Quebec, Canada
-                <br />
-                CEO: Jordan Bourbonnais
                 <br />
                 Telegram: <a href="https://t.me/remixworlds" target="_blank" className="text-neutral bg-paper border-neutral">https://t.me/remixworlds</a>
                 </strong></p>

@@ -25,16 +25,16 @@ const internalLinks = [
 
 const companyLinks = [
     {
-        label: 'FAQ',
-        href: '/faq',
+        label: 'Wax Cloud Wallet (Create Account)',
+        href: 'https://wallet.wax.io',
     },
     {
-        label: 'Terms of Use',
-        href: '/tou',
+        label: 'AtomicHub Market - FreeCityGame',
+        href: 'https://wax.atomichub.io/market?collection_name=freecitygame&order=desc&sort=created&symbol=WAX',
     },
     {
-        label: 'Privacy',
-        href: '/privacy',
+        label: 'Alcor - RMX Token',
+        href: 'https://wax.alcor.exchange/trade/rmx-remixgamingx_wax-eosio.token',
     },
 ]
 
@@ -103,18 +103,18 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <h4 className={cn('text-primary text-xl mt-2')}>WAX Market</h4>
+                    <h4 className={cn('text-primary text-xl mt-2')}>Internal Links</h4>
                     <div className={cn('flex flex-col mt-5 gap-4', 'text-neutral')}>
                         <LinksList links={internalLinks} />
                     </div>
                 </div>
                 <div>
-                    <h4 className={cn('text-primary text-xl mt-2')}>Company Links</h4>
+                    <h4 className={cn('text-primary text-xl mt-2')}>WAX Market Links</h4>
                     <div className={cn('flex flex-col mt-5 gap-4', 'text-neutral')}>
                         <LinksList links={companyLinks} />
                     </div>
                 </div>
-            </div>
+            </div><center>© <a href="https://remixworlds.com" target="_blank" className="text-neutral bg-paper border-neutral">RemixWorlds.com</a></center>
         </div>
     )
 }

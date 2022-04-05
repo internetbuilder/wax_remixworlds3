@@ -682,7 +682,7 @@ export const getRefundBalance = createTableGetter(
 
 export const getWaxBalance = createTableGetter(
     (/** @type {string} */ name) => ({
-        code: 'eosio.token',
+        code: 'remixgamingx',
         index_position: 'primary',
         json: 'true',
         key_type: 'i64',

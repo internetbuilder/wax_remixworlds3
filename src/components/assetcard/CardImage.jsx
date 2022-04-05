@@ -14,15 +14,15 @@ const CardImage = ({ asset }) => {
     }
 
     return (
-        <div className="flex content-center">
+        <div className="flex content-center"><center>
             {image ? (
                 <img className="preview-img my-auto max-h-full" src={image} alt="none" />
             ) : (
                 video && (
                     <video
                         className={cn('w-full')}
-                        width="190"
-                        height="190"
+                        width="100%"
+                        height="100%"
                         loop
                         src={video}
                         autoPlay={true}
@@ -32,7 +32,7 @@ const CardImage = ({ asset }) => {
                     />
                 )
             )}
-        </div>
+        </center></div>
     )
 }
 

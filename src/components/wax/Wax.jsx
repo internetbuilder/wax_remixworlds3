@@ -145,8 +145,8 @@ export const withdrawAction = async (quantity, activeUser) => {
         {
             actions: [
                 {
-                    account: 'atomicmarket',
-                    name: 'withdraw',
+                    account: 'freecitygamx',
+                    name: 'wthtoken',
                     authorization: [
                         {
                             actor: userName,
@@ -155,7 +155,7 @@ export const withdrawAction = async (quantity, activeUser) => {
                     ],
                     data: {
                         owner: userName,
-                        token_to_withdraw: `${quantity.toFixed(8)} WAX`,
+                        token_to_withdraw: `${quantity.toFixed(8)} RMX`,
                     },
                 },
             ],
@@ -296,25 +296,8 @@ export const announceSaleAction = async (assetId, quantity, activeUser) => {
         {
             actions: [
                 {
-                    account: 'atomicmarket',
-                    name: 'announcesale',
-                    authorization: [
-                        {
-                            actor: userName,
-                            permission: activeUser['requestPermission'],
-                        },
-                    ],
-                    data: {
-                        seller: userName,
-                        maker_marketplace: config.market_name,
-                        settlement_symbol: '8,WAX',
-                        asset_ids: [assetId],
-                        listing_price: quantity.toFixed(8) + ' WAX',
-                    },
-                },
-                {
                     account: 'atomicassets',
-                    name: 'createoffer',
+                    name: 'transfer',
                     authorization: [
                         {
                             actor: userName,
@@ -322,11 +305,10 @@ export const announceSaleAction = async (assetId, quantity, activeUser) => {
                         },
                     ],
                     data: {
-                        sender: userName,
-                        recipient: 'atomicmarket',
-                        sender_asset_ids: [assetId],
-                        recipient_asset_ids: [],
-                        memo: 'sale',
+                        from: userName,
+                        memo: 'stake',
+                        asset_ids: [assetId],
+                        to: 'freecitygamx'
                     },
                 },
             ],

@@ -85,7 +85,7 @@ function TransferWindow(props) {
             <div className="text-xl sm:text-2xl md:text-3xl mt-4 lg:mt-0 text-center">{name}</div>
             <WindowContent image={image} video={video} collection={collection['name']} schema={schema['schema_name']} />
             <div className="text-base sm:text-lg text-center my-0 md:my-4">
-                {`Are you sure you want to stake ${name} to freecitygamx? (Write "accept" in the field)`}
+                {`Are you sure you want to stake ${name}? (Write "accept" in the field)`}
             </div>
             {error ? <ErrorMessage error={error} /> : ''}
             <div className={cn('relative m-auto lg:mb-10 py-1', 'flex flex-row items-center justify-evenly')}>

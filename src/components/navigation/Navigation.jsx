@@ -88,7 +88,22 @@ const Navigation = React.memo((props) => {
                         'uppercase font-bold text-base',
                     )}
                 >
-                   
+                
+<Link href={'/blends'}>
+
+<span className={cn(
+
+    'pb-px md:pb-2',
+
+    router.pathname.indexOf('/blends') > -1 ? 'border-b-4 border-primary' : '',
+
+)}>
+
+    Blends
+
+</span>
+
+</Link>CLAIM
                     {isLoading ? (
                         <LoadingIndicator />
                     ) : userName ? (
@@ -115,7 +130,7 @@ const Navigation = React.memo((props) => {
 
                                             {balance !== 0 && (
                                                 <div className={cn('font-light text-sm text-center')}>
-                                                    {formatNumber(balance)} WAX
+                                                    {formatNumber(balance)} RMX
                                                 </div>
                                             )}
                                         </Menu.Button>

@@ -228,7 +228,7 @@ export default function MarketButtons(props) {
 
     const sellField = (
         <Container className={cn('flex flex-col')}>
-            <AssetButton onClick={sell}>Sell</AssetButton>
+            <AssetButton onClick={sell}>Stake this asset</AssetButton>
         </Container>
     )
 
@@ -248,7 +248,7 @@ export default function MarketButtons(props) {
             <Container className={cn('flex flex-col')}>
                 <div className="relative py-0 px-1 text-md w-full">{formattedPrice}</div>
                 <AssetButton className="relative text-center mx-auto top-0 left-0" onClick={buy}>
-                    Buy
+                    
                 </AssetButton>
             </Container>
         )
@@ -394,7 +394,7 @@ export default function MarketButtons(props) {
         const cancelField = (
             <Container>
                 <div className="relative text-center ml-auto mr-auto top-0 left-0" onClick={cancel}>
-                    Cancel
+                    Unlist to Market
                 </div>
             </Container>
         )
