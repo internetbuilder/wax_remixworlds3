@@ -19,8 +19,8 @@ const useClaimRefund = (userName, activeUser, setBalance, setRefundBalance) => {
                 {
                     actions: [
                         {
-                            account: 'atomicmarket',
-                            name: 'withdraw',
+                            account: 'freecitygamx',
+                            name: 'claimstake',
                             authorization: [
                                 {
                                     actor: userName,
@@ -28,8 +28,8 @@ const useClaimRefund = (userName, activeUser, setBalance, setRefundBalance) => {
                                 },
                             ],
                             data: {
-                                owner: userName,
-                                token_to_withdraw: `${quantity.toFixed(8)} WAX`,
+                                wallet: userName,
+                                token_to_withdraw: `${quantity.toFixed(8)} RMX`,
                             },
                         },
                     ],
@@ -165,7 +165,7 @@ const Navigation = React.memo((props) => {
                                                                     : '',
                                                             )}
                                                         >
-                                                            Your Cards
+                                                            Stake
                                                         </span>
                                                     </Link>
                                                 </Menu.Item>
@@ -181,7 +181,7 @@ const Navigation = React.memo((props) => {
                                                                         : '',
                                                                 )}
                                                             >
-                                                                Your Blender
+                                                                Blends
                                                             </span>
                                                         </Link>
                                                 </Menu.Item>
@@ -213,6 +213,18 @@ const Navigation = React.memo((props) => {
                                                                 'hover:text-primary transition-colors',
                                                             )}
                                                         >
+                                                            CLAIM
+                                                        </span>
+                                                    </div>
+                                                </Menu.Item>
+                                                <Menu.Item className={cn('mt-3')}>
+                                                    <div onClick={performLogout}>
+                                                        <span
+                                                            className={cn(
+                                                                'cursor-pointer',
+                                                                'hover:text-primary transition-colors',
+                                                            )}
+                                                        >
                                                             Logout
                                                         </span>
                                                     </div>
@@ -227,7 +239,7 @@ const Navigation = React.memo((props) => {
                                             className={cn('cursor-pointer')}
                                             onClick={() => claimRefund(refundBalance)}
                                         >
-                                            Refund: {formatNumber(refundBalance)} WAX
+                                            Refund: {formatNumber(refundBalance)} RMX
                                         </div>
                                     </div>
                                 )}

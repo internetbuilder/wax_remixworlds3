@@ -146,7 +146,7 @@ export const withdrawAction = async (quantity, activeUser) => {
             actions: [
                 {
                     account: 'freecitygamx',
-                    name: 'wthtoken',
+                    name: 'claimstake',
                     authorization: [
                         {
                             actor: userName,
@@ -154,8 +154,7 @@ export const withdrawAction = async (quantity, activeUser) => {
                         },
                     ],
                     data: {
-                        owner: userName,
-                        token_to_withdraw: `${quantity.toFixed(8)} RMX`,
+                        wallet: userName,
                     },
                 },
             ],

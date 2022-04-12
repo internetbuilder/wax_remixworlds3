@@ -89,7 +89,7 @@ function MoreOptions(props) {
                     onClick={auction}
                 >
                     <div className="text-center">
-                        <img src="/pricetags-outline.svg" alt="Transfer" className="w-4 h-4 mr-4" />
+                        <img src="/pricetags-outline.svg" alt="CLAIM" className="w-4 h-4 mr-4" />
                     </div>
                     <div>Claim</div>
                 </div>

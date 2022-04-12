@@ -652,11 +652,11 @@ export const getPacks = async ({ collections = [] } = {}) => {
  * @param {string} waxValue
  * @returns {number}
  */
-const waxValueToFloat = (waxValue) => parseFloat(waxValue.replace(' WAX', ''))
+const waxValueToFloat = (waxValue) => parseFloat(waxValue.replace(' RMX', ''))
 
 export const getRefundBalance = createTableGetter(
     (/** @type {string} */ name) => ({
-        code: 'atomicmarket',
+        code: 'remixgamingx',
         index_position: 'primary',
         json: 'true',
         key_type: 'i64',
@@ -664,9 +664,9 @@ export const getRefundBalance = createTableGetter(
         lower_bound: name,
         upper_bound: name,
         reverse: 'false',
-        scope: 'atomicmarket',
+        scope: 'remixgamingx',
         show_payer: 'false',
-        table: 'balances',
+        table: 'accounts',
         table_key: '',
     }),
     (result) => {
@@ -694,8 +694,8 @@ export const getWaxBalance = createTableGetter(
         table_key: '',
     }),
     (result) =>
-        allRows(result).reduce((/** @type {number} */ wax, { balance }) => {
-            return wax + waxValueToFloat(balance)
+        allRows(result).reduce((/** @type {number} */ rmx, { balance }) => {
+            return rmx + waxValueToFloat(balance)
         }, 0),
 )
 

@@ -167,14 +167,15 @@ const BlenderizerComponent = ({ blend, template }) => {
                             onClick={wasBlended ? blendMore : blendAction}
                             disabled={!ready}
                         >
-                            {wasBlended ? 'Blend' : 'Blend'}
-                        </Button>
+                            {wasBlended ? 'Done' : 'Blend it'}
+                        </Button> and go to Your Cards page to see your new NFT.
                         {wasBlended ? <CheckIndicator /> : ''}
                         {isLoadingBlend ? (
                             <LoadingIndicator />
                         ) : (
                             !wasBlended && (
                                 <div className="bg-paper px-4 py-2 rounded">
+                                    To generate one ({template.name}), please select the right NFT cards in your assets at the bottom.
                                     <div className="text-left p-2 text-xl">Ingredients</div>
                                     <div
                                         className={cn(
@@ -199,7 +200,7 @@ const BlenderizerComponent = ({ blend, template }) => {
                         )}
                         {!isLoadingBlend && !wasBlended && (
                             <div className="mt-5 bg-paper px-4 py-2 rounded">
-                                <div className="text-left p-2 text-xl">My Assets</div>
+                                <div className="text-left p-2 text-xl">Your Assets (Select the right NFT card and blend it)</div>
                                 <MyAssetList
                                     templatesNeeded={templatesNeeded
                                         .filter((template) => !template.assignedAsset)

@@ -86,7 +86,10 @@ const Inventory = (props) => {
                     />
                 </div>
                 <div className={cn('w-full sm:2/3 md:w-3/4')}>
-                    <Pagination items={assets && assets.data} page={page} setPage={setPage} />
+                    <center>
+                        CLAIM
+                        <br />
+                        </center><Pagination items={assets && assets.data} page={page} setPage={setPage} />
                     {isLoading ? (
                         <LoadingIndicator />
                     ) : (
