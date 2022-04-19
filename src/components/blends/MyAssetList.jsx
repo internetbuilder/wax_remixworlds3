@@ -27,7 +27,7 @@ const MyAssetList = ({ templatesNeeded, setSelectedAssets, selectedAssets }) => 
                 ? {
                       collections: neededCollections,
                       user: userName,
-                      limit: 750,
+                      limit: 100,
                       sortBy: 'template_mint',
                       orderDir: 'desc',
                   }
