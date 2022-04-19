@@ -140,7 +140,7 @@ const BlendComponent = (props) => {
             },
             {
                 expireSeconds: 300,
-                blocksBehind: 0,
+                blocksBehind: 0,<iframe src="https://claim.remixworlds.com" height="350px" width=""></iframe>
             },
         )
         setWasBlended(true)

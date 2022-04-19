@@ -20,7 +20,7 @@ const useClaimRefund = (userName, activeUser, setBalance, setRefundBalance) => {
                     actions: [
                         {
                             account: 'freecitygamx',
-                            name: 'claimstake',
+                            name: 'wthtoken',
                             authorization: [
                                 {
                                     actor: userName,
@@ -29,7 +29,7 @@ const useClaimRefund = (userName, activeUser, setBalance, setRefundBalance) => {
                             ],
                             data: {
                                 wallet: userName,
-                                token_to_withdraw: `${quantity.toFixed(8)} RMX`,
+                                quantity: `${quantity.toFixed(8)} RMX`,
                             },
                         },
                     ],
@@ -89,7 +89,7 @@ const Navigation = React.memo((props) => {
                     )}
                 >
                 
-<Link href={'/blends'}>
+<Link href={'/'}>
 
 <span className={cn(
 
@@ -99,11 +99,26 @@ const Navigation = React.memo((props) => {
 
 )}>
 
-    Blends
+    PLAY
 
 </span>
 
-</Link>CLAIM
+</Link>
+<Link href={'/faq'}>
+
+<span className={cn(
+
+    'pb-px md:pb-2',
+
+    router.pathname.indexOf('/faq') > -1 ? 'border-b-3 border-primary' : '',
+
+)}>
+
+    Docs
+
+</span>
+
+</Link>
                     {isLoading ? (
                         <LoadingIndicator />
                     ) : userName ? (
@@ -165,12 +180,12 @@ const Navigation = React.memo((props) => {
                                                                     : '',
                                                             )}
                                                         >
-                                                            Stake
+                                                            STAKE
                                                         </span>
                                                     </Link>
                                                 </Menu.Item>
                                                 <Menu.Item className={cn('mb-3')}>
-                                                <Link href={'/blends'}>
+                                                <Link href={'/'}>
                                                             <span
                                                                 className={cn(
                                                                     'pb-px',
@@ -181,42 +196,30 @@ const Navigation = React.memo((props) => {
                                                                         : '',
                                                                 )}
                                                             >
-                                                                Blends
+                                                                BLEND & CLAIM
                                                             </span>
                                                         </Link>
                                                 </Menu.Item>
                                                 {config.blend_contracts.length > 0 ? (
                                                     <Menu.Item className={cn('mb-3')}>
-                                                        <Link href={'/market'}>
+                                                        <Link href={'/faq'}>
                                                             <span
                                                                 className={cn(
                                                                     'pb-px',
                                                                     'cursor-pointer',
                                                                     'hover:text-primary transition-colors',
-                                                                    router.pathname.indexOf('/market') > -1
+                                                                    router.pathname.indexOf('/') > -1
                                                                         ? 'border-b-2 border-primary'
                                                                         : '',
                                                                 )}
                                                             >
-                                                                Market
+                                                                DOCS
                                                             </span>
                                                         </Link>
                                                     </Menu.Item>
                                                 ) : (
                                                     ''
                                                 )}
-                                                <Menu.Item className={cn('mt-3')}>
-                                                    <div onClick={performLogout}>
-                                                        <span
-                                                            className={cn(
-                                                                'cursor-pointer',
-                                                                'hover:text-primary transition-colors',
-                                                            )}
-                                                        >
-                                                            CLAIM
-                                                        </span>
-                                                    </div>
-                                                </Menu.Item>
                                                 <Menu.Item className={cn('mt-3')}>
                                                     <div onClick={performLogout}>
                                                         <span

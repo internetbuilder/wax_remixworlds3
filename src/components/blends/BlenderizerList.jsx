@@ -70,6 +70,12 @@ function BlenderizerList(props) {
     return (
         <div className={cn('w-full grid grid-cols-8 gap-10')}>
             <div className={cn('col-span-8 sm:col-span-8')}>
+            <center>
+<p><strong>BLEND</strong>
+<br /><br />
+Select the NFT card you want generate.
+</p>
+</center>
                 <Pagination items={blends && blends.data} page={page} setPage={setPage} />
                 {isLoading ? (
                     <LoadingIndicator />
@@ -85,6 +91,7 @@ function BlenderizerList(props) {
                     </div>
                 )}
                 {isLoading ? '' : <Pagination items={blends && blends.data} page={page} setPage={setPage} />}
+
             </div>
         </div>
     )

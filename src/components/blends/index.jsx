@@ -19,11 +19,13 @@ const LoginWindow = () => {
     const { showModal } = useUAL()
     return (
         <div className="flex justify-center">
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br />
             <button
-                className="hover:text-black hover:bg-primary font-bold py-2 px-4 rounded border-2 border-primary transition-colors"
+                className=""
                 onClick={showModal}
             >
-                To use the Blend feature you need to login.
+                <center><img src="/new-logo-freecity.png" width="50%" alt="FreeCityGame"/><br />Register or Login</center>
             </button>
         </div>
     )
@@ -56,14 +58,14 @@ export const Blends = (props) => {
                         >
                             <Tab
                                 eventKey="blenderizerx"
-                                title={<TabItem target={'blenderizerx'} tabKey={activeTab} title={'Blenderizer'} />}
+                                title={<TabItem target={'blenderizerx'} tabKey={activeTab} title={'BLENDS NFT'} />}
                                 unmountOnExit
                             >
                                 <BlenderizerList user={accountName} {...props} />
                             </Tab>
                             <Tab
                                 eventKey="nefty.blends"
-                                title={<TabItem target={'nefty.blends'} tabKey={activeTab} title={'Nefty Blends'} />}
+                                title={<TabItem target={'nefty.blends'} tabKey={activeTab} title={'CLAIM RMX'} />}
                                 unmountOnExit
                             >
                                 <NeftyBlendsList user={accountName} {...props} />

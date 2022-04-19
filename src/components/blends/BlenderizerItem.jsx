@@ -59,7 +59,7 @@ function BlenderizerItem(props) {
                                 'text-center text-base font-light text-neutral',
                             )}
                         >
-                            View Blend
+                            {template.name}
                         </div>
                     </Link>
                 </div>

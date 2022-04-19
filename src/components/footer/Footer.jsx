@@ -115,6 +115,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div><center>© <a href="https://remixworlds.com" target="_blank" className="text-neutral bg-paper border-neutral">RemixWorlds.com</a></center>
+            
         </div>
     )
 }

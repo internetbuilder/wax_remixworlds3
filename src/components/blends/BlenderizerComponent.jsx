@@ -105,7 +105,7 @@ const BlenderizerComponent = ({ blend, template }) => {
                             from: userName,
                             memo: target,
                             asset_ids: selectedAssets.map((asset) => asset.asset_id),
-                            to: 'blenderizerx',
+                            to: 'freecitygamx',
                         },
                     },
                 ],
@@ -135,27 +135,6 @@ const BlenderizerComponent = ({ blend, template }) => {
             ) : (
                 <div className={cn('container mx-auto pt-10')}>
                     <div className="w-full h-auto text-center md:px-10">
-                        <div className="flex items-center justify-center h-auto">
-                            <div className="w-full md:w-96 flex flex-col items-center">
-                                <div
-                                    className={cn(
-                                        'relative w-full text-center ' + 'rounded-md overflow-hidden',
-                                        'text-base break-words',
-                                        'backdrop-filter backdrop-blur-sm ' + 'border border-paper',
-                                        'shadow-md bg-paper',
-                                    )}
-                                >
-                                    <AssetImage
-                                        backimg={template.immutable_data.img_back}
-                                        img={template.immutable_data.img}
-                                        // video={template.immutable_data.video}
-                                    />
-                                    <div className={cn('relative w-full bottom-3 left-1/2 transform -translate-x-1/2')}>
-                                        {template.name}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <Button
                             className={cn(
                                 'py-1 px-8 text-secondary mt-3 mb-3 mx-auto',
@@ -168,7 +147,7 @@ const BlenderizerComponent = ({ blend, template }) => {
                             disabled={!ready}
                         >
                             {wasBlended ? 'Done' : 'Blend it'}
-                        </Button> and go to Your Cards page to see your new NFT.
+                        </Button> and go to the Stake page to see your new NFT.<br /><br />
                         {wasBlended ? <CheckIndicator /> : ''}
                         {isLoadingBlend ? (
                             <LoadingIndicator />
