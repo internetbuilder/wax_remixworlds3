@@ -39,6 +39,12 @@ function CardDetails(props) {
                 <tbody>
                     <tr>
                         <td className="text-white w-24 text-left text-xs">
+                            <b>Vote:</b>
+                        </td>
+                        <td className="text-white max-w-td text-right text-xs leading-4">{template.immutable_data.vote}</td>
+                    </tr>
+                    <tr>
+                        <td className="text-white w-24 text-left text-xs">
                             <b>Asset ID:</b>
                         </td>
                         <td className="text-white max-w-td text-right text-xs leading-4">{asset_id}</td>
@@ -74,7 +80,7 @@ function CardDetails(props) {
                     {median && (
                         <tr>
                             <td className="text-white w-24 text-left text-xs">
-                                <b>Suggested Median:</b>
+                                <b>Suggested:</b>
                             </td>
                             <td className="text-white max-w-td text-right text-xs leading-4">
                                 {formatNumber(median / Math.pow(10, token_precision))} WAX

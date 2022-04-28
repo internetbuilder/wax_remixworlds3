@@ -6,20 +6,8 @@ import { DiscordIcon, InstagramIcon, TelegramIcon, TwitterIcon } from '../icons'
 
 const internalLinks = [
     {
-        label: 'Explorer',
-        href: '/explorer',
-    },
-    {
-        label: 'Market',
-        href: '/market',
-    },
-    {
-        label: 'Collections',
-        href: '/explorer?tab=collections',
-    },
-    {
-        label: 'Assets',
-        href: '/explorer?tab=assets',
+        label: 'FreeCityGame',
+        href: '/collection/freecitygame',
     },
 ]
 
@@ -114,8 +102,12 @@ const Footer = () => {
                         <LinksList links={companyLinks} />
                     </div>
                 </div>
-            </div><center>© <a href="https://remixworlds.com" target="_blank" className="text-neutral bg-paper border-neutral">RemixWorlds.com</a></center>
+            </div><center>
             
+            <br />
+            Extra Sauce Studio - Quebec enterprise number: (NEQ) 2277160562 - 21 rue de la pointe, saint-alphonse-rodriguez, J0K 1W0, Quebec, Canada<br />
+            © <a href="https://remixworlds.com" target="_blank" className="text-neutral bg-paper border-neutral">RemixWorlds.com</a>
+            </center>
         </div>
     )
 }

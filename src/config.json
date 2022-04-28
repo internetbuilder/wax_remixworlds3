@@ -1,6 +1,6 @@
 {
     "ipfs": "https://ipfs.hivebp.io/ipfs/",
-    "atomic_api": "https://test.hivebp.io",
+    "atomic_api": "https://atomic.hivebp.io",
     "market_name": "remixworlds1",
     "market_url": "https://play.remixworlds.com",
     "default_collection": "freecitygame",

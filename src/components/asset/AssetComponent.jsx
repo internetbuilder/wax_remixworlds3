@@ -17,7 +17,7 @@ export const AssetComponent = (props) => {
 
     const image = data.img ? config.ipfs + data.img : ''
 
-    const title = `Check out ${name}`
+    const title = `${name}`
 
     let description = `by ${collection.name}${template_mint ? ' - Mint #' + template_mint : ''}`
 
@@ -31,6 +31,7 @@ export const AssetComponent = (props) => {
                     </div>
                     <div className="w-full md:w-3/5 md:px-10">
                         <AssetDetails asset={asset} />
+                        
                     </div>
                 </div>
                 <div className="mt-20 mb-20 leading-10 text-center">

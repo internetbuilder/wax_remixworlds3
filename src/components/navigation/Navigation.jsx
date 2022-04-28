@@ -20,7 +20,7 @@ const useClaimRefund = (userName, activeUser, setBalance, setRefundBalance) => {
                     actions: [
                         {
                             account: 'freecitygamx',
-                            name: 'wthtoken',
+                            name: 'claimstake',
                             authorization: [
                                 {
                                     actor: userName,
@@ -29,7 +29,6 @@ const useClaimRefund = (userName, activeUser, setBalance, setRefundBalance) => {
                             ],
                             data: {
                                 wallet: userName,
-                                quantity: `${quantity.toFixed(8)} RMX`,
                             },
                         },
                     ],
@@ -208,7 +207,7 @@ const Navigation = React.memo((props) => {
                                                                     'pb-px',
                                                                     'cursor-pointer',
                                                                     'hover:text-primary transition-colors',
-                                                                    router.pathname.indexOf('/') > -1
+                                                                    router.pathname.indexOf('/faq') > -1
                                                                         ? 'border-b-2 border-primary'
                                                                         : '',
                                                                 )}

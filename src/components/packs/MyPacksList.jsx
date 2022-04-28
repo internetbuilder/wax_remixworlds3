@@ -6,6 +6,7 @@ import { getFilters, getValues } from '../helpers/Helpers'
 import LoadingIndicator from '../loadingindicator/LoadingIndicator'
 import { Context } from '../marketwrapper'
 import Pagination from '../pagination/Pagination'
+import { getAccountStats } from '../../api/fetch'
 
 function MyPacksList(props) {
     const [state, dispatch] = useContext(Context)
@@ -40,7 +41,7 @@ function MyPacksList(props) {
 
     return (
         <div className={cn('w-full grid grid-cols-8 gap-10')}>
-            <div className={cn('col-span-8 sm:col-span-8')}>
+            xxx<div className={cn('col-span-8 sm:col-span-8')}>
                 <Pagination items={assets && assets.data} page={page} setPage={setPage} />
                 {isLoading ? (
                     <LoadingIndicator />

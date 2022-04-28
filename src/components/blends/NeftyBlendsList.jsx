@@ -85,25 +85,7 @@ function NeftyBlendsList(props) {
             <div className={cn('col-span-8 sm:col-span-8')}>
             <center>
 <p><strong>CLAIM</strong></p>
-<iframe src="https://claim.remixworlds.com" height="700px" width="100%"></iframe>
-    <div>
-    
-        <details>
-            <summary>Our plan (click to expense)</summary>
-            
-        </details>
-        <details>
-            <summary>Contact us (click to expense)</summary>
-            <p><strong>Quebec enterprise number: (NEQ) 2277160562
-            <br />
-            Extra Sauce Studio
-            <br />             
-                21 rue de la pointe, saint-alphonse-rodriguez, J0K 1W0, Quebec, Canada
-                <br />
-                Telegram: <a href="https://t.me/remixworlds" target="_blank" className="text-neutral bg-paper border-neutral">https://t.me/remixworlds</a>
-                </strong></p>
-        </details>
-    </div>
+<iframe src="https://claim.remixworlds.com" height="2000px" width="100%"></iframe>
 </center>
 <br />
                 <Pagination items={blends && blends.data} page={page} setPage={setPage} />
@@ -120,7 +102,7 @@ function NeftyBlendsList(props) {
                     </div>
                 )}
                 {isLoading ? '' : <Pagination items={blends && blends.data} page={page} setPage={setPage} />}
-            </div>222
+            </div>
         </div>
     )
 }

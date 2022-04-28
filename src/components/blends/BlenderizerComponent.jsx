@@ -143,19 +143,27 @@ const BlenderizerComponent = ({ blend, template }) => {
                                 { 'bg-primary': ready },
                                 { 'bg-paper': !ready },
                             )}
-                            onClick={wasBlended ? blendMore : blendAction}
+                            onClick={wasBlended ? null : blendAction}
                             disabled={!ready}
                         >
-                            {wasBlended ? 'Done' : 'Blend it'}
-                        </Button> and go to the Stake page to see your new NFT.<br /><br />
-                        {wasBlended ? <CheckIndicator /> : ''}
+                            {wasBlended ? <a href="/blends">BLEND AGAIN</a> : 'Blend it'}
+                            
+                        </Button><br /><br />
+                        {wasBlended ? <CheckIndicator /> : 'To generate 1 ('}
+                        {wasBlended ? null : template.name}
+                        {wasBlended ? null : '), with '}
+                        {wasBlended ? null : template.immutable_data.vote}
+                        {wasBlended ? null : ' vote value, please select the right NFT cards in your assets at the bottom.'}
+                        <br />
+                         {wasBlended ? 'Blend successful' : null}
+                         <br /><br />
+                        {wasBlended ? <a href={'/inventory/' + userName}>Go to Stake Page to see your NFT</a> : null}
                         {isLoadingBlend ? (
-                            <LoadingIndicator />
+                            null
                         ) : (
                             !wasBlended && (
                                 <div className="bg-paper px-4 py-2 rounded">
-                                    To generate one ({template.name}), please select the right NFT cards in your assets at the bottom.
-                                    <div className="text-left p-2 text-xl">Ingredients</div>
+                                    <div className="text-left p-2 text-xl">Ingredients needed</div>
                                     <div
                                         className={cn(
                                             'w-full grid grid-cols-4 md:grid-cols-6 2xl:grid-cols-8 gap-2 md:gap-10',

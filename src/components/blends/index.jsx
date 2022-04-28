@@ -20,12 +20,12 @@ const LoginWindow = () => {
     return (
         <div className="flex justify-center">
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br />
             <button
                 className=""
                 onClick={showModal}
             >
-                <center><img src="/new-logo-freecity.png" width="50%" alt="FreeCityGame"/><br />Register or Login</center>
+                <center><img src="/new-logo-freecity.png" width="95%" alt="FreeCityGame"/><br />Register or Login</center>
             </button>
         </div>
     )

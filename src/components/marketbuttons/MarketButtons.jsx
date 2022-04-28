@@ -371,6 +371,7 @@ export default function MarketButtons(props) {
                 ) : (
                     <Container className={cn('flex flex-col')}>
                         <div className="relative py-0 px-1 text-md w-full">{formattedPrice}</div>
+                        <CheckIndicator /> 
                     </Container>
                 )}
                 {!isLoading && (error || popError) ? (

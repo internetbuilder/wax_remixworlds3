@@ -75,7 +75,7 @@ export const AssetCard = (props) => {
     const sale = props['sale']
     const page = props['page']
 
-    const { collection, asset_id, template_mint, name } = asset
+    const { collection, asset_id, template_mint, template, name } = asset
 
     const { collection_name } = collection
 
@@ -318,15 +318,11 @@ export const AssetCard = (props) => {
                         <img src={'/arrow-ios-back-outline.svg'} alt="<" />
                     </div>
                 )}
-                <Link
-                    href={
-                        sale_id ? `/listing/${sale_id}` : auction_id ? `/auction/${auction_id}` : `/asset/${asset_id}`
-                    }
-                >
+
                     <div className="flex flex-1 justify-center h-full">
                         <CardImage asset={asset} index={selectedAsset} />
                     </div>
-                </Link>
+                
                 {assets.length > 1 && (
                     <div
                         className={cn(
@@ -342,7 +338,7 @@ export const AssetCard = (props) => {
                 )}
             </div>
 
-            <Link href={sale_id ? `/listing/${sale_id}` : auction_id ? `/auction/${auction_id}` : `/asset/${asset_id}`}>
+            
                 <div className="relative">
                     <p
                         className={cn(
@@ -351,11 +347,12 @@ export const AssetCard = (props) => {
                             'overflow-visible',
                         )}
                     >
-                        {name ? name : asset_id}
+                        {name ? name : asset_id} <br /><br />
+                        <strong>Vote: {template.immutable_data.vote}</strong><br /><br />
+                        (if you stake this asset, you will claim {template.immutable_data.vote} x 0.01 RMX per 24H)
                     </p>
                     {frontVisible ? <div className="absolute -top-3 left-22">{mintInfo}</div> : ''}
                 </div>
-            </Link>
 
             {frontVisible ? (
                 <MarketButtons
@@ -381,7 +378,7 @@ export const AssetCard = (props) => {
                     page={page}
                 />
             ) : null}
-
+           
             <div
                 className={cn(
                     'absolute w-8 h-8 bottom-0 bg-transparent',

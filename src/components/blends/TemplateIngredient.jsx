@@ -28,11 +28,11 @@ export const TemplateIngredient = ({ template, selected = false, onRemove }) => 
         onClick={() => onRemove(template)}
     >
         <div className={cn('')}>
+            <div>{template.name}</div>
             <div className={cn('w-full')}>
                 <PreviewImage data={template} />
             </div>
-            <div>{template.name}</div>
-            <div>Template: {template.template_id}</div>
+            <div><strong>Vote: {template.immutable_data.vote}</strong></div>
         </div>
     </div>
 )

@@ -6,9 +6,10 @@ import React from 'react'
 export const Home = (props) => {
     return <div><br />
     <div class="text wrap">
+
 <center><br />
       <p><strong>Welcome on FreeCityGame, an easy to play P2E NFT game based on WAX blockchain.</strong></p><br />
-      <img src="/new-logo-freecity.png" alt="FreeCityGame"/>
+      <img src="/new-logo-freecity.png" alt="FreeCityGame" width="40%"/>
 <p><strong>Interplanetary political power games
     <br />
     FreeCity will be the first city to be conquered in this fantastic multiverse.<br />
@@ -18,9 +19,10 @@ export const Home = (props) => {
     Reward depends on the total number of votes you have in your staked NFT cards.</strong></p>
 <br />
 <p><strong>How make money ?</strong></p>
+
     <div>
 
-        <details>
+        
             <summary>Way 1: Blend card to generate higher value cards (click to expense)</summary>
             <p><strong>We are creating a city with limited spaces, we have 4 levels of playing cards and each card has a vote value.<br />
             So to start you will get 5x of the smallest card in the game, the vote card.<br />
@@ -39,15 +41,15 @@ All prices here are approximate and above all can change depending on the market
 <br /><br />
 </p>
 
-        </details>
+        
 
-        <details>
+        
             <summary>Way 2: Stake NFT card with high vote value (click to expense)</summary>
             <p><strong>Stake any <a href="https://wax.atomichub.io/explorer/collection/freecitygame" target="_blank" className="text-neutral bg-paper border-neutral">FREECITYGAME</a> nft and you avalaible to claim our <a href="https://wax.alcor.exchange/trade/rmx-remixgamingx_wax-eosio.token" target="_blank" className="text-neutral bg-paper border-neutral">RMX token</a> one time every 24H. <br />
             <a href="https://wax.bloks.io/account/freecitygamx?loadContract=true&tab=Tables&account=freecitygamx&scope=freecitygamx&limit=100&table=users" target="_blank" className="text-neutral bg-paper border-neutral">Reward</a> depends on the total number of votes you have in your <a href="https://wax.bloks.io/account/freecitygamx?loadContract=true&tab=Tables&account=freecitygamx&scope=freecitygamx&limit=100&table=userstaking" target="_blank" className="text-neutral bg-paper border-neutral">staked NFT</a> cards. (1 vote = 0.01 RMX/24h).<br/>
             The goal of this game is to earn a lot of RMX token for our players. If this is not the case, we will rectify the situation ;)</strong>
             </p>
-        </details>
+        
 
     </div>
 </center>
@@ -58,26 +60,24 @@ All prices here are approximate and above all can change depending on the market
 <p><strong>How to play ?</strong></p>
     <div>
 
-        <details>
+        
             <summary>Blend NFT card to generate higher value cards. (click to expense)</summary>
             <p><strong>To blend your NFT card you go to <a href="/blends" className="text-neutral bg-paper border-neutral">Your Blender</a> page and select the NFT card you want generate.<br />
              (Make sure you have the ingredients NFT cards to generate your target NFT card. 
             if not to <a href="https://wax.atomichub.io/market?collection_name=freecitygame&order=asc&schema_name=multiverse&sort=price&symbol=WAX"  target="_blank" className="text-neutral bg-paper border-neutral">buy it in the marketplace</a>)
             </strong></p>
             <br />
-        </details>
-        <details>
+        
             <summary>Stake NFT card (click to expense)</summary>
             <p><strong>To stake your NFT card and claim your reward every 24 hours, you go to STAKE page and on any asset you can find the stake button.
             </strong></p>
             <img src="/moreoption.png" alt="FreeCityGame"/>
-        </details>
-        <details>
+        
             <summary>Claim every 24h (click to expense)</summary>
             <p><strong>To claim your reward every 24 hours, you go to the <a href="https://claim.remixworlds.com" target="_blank" className="text-neutral bg-paper border-neutral">CLAIM Tool</a>, you login and you use the claim button.
             </strong></p>
             <img src="/moreoption.png" alt="FreeCityGame"/>
-        </details>
+        
     </div>
 </center>
 </div>
@@ -87,7 +87,7 @@ All prices here are approximate and above all can change depending on the market
 <p><strong>About our RMX token?</strong></p>
     <div>
 
-        <details>
+        
             <summary>General info (click to expense)</summary>
             <p><strong>RMX Token
             Total token supply: 1 billion<br />
@@ -102,7 +102,7 @@ All prices here are approximate and above all can change depending on the market
             See on Alcor market: <a href="https://wax.alcor.exchange/trade/rmx-remixgamingx_wax-eosio.token" target="_blank" className="text-neutral bg-paper border-neutral">wax.alcor.exchange</a>
             <br /></strong></p>
 
-        </details>
+        
     </div>
 </center>
 </div>
@@ -112,15 +112,13 @@ All prices here are approximate and above all can change depending on the market
 <p><strong>About us?</strong></p>
     <div>
 
-        <details>
+        
             <summary>Our plan (click to expense)</summary>
             <p><strong>Our plan is to create several NFT games so that they can <br />
                 interact together to create a multi-game platform nft on WAX <br />
                 blockchain and our RMX token </strong></p>
             <br />
-        </details>
-
-        <details>
+        
             <summary>Contact us (click to expense)</summary>
             <p><strong>Quebec enterprise number: (NEQ) 2277160562
             <br />
@@ -131,7 +129,7 @@ All prices here are approximate and above all can change depending on the market
                 Telegram: <a href="https://t.me/remixworlds" target="_blank" className="text-neutral bg-paper border-neutral">https://t.me/remixworlds</a>
                 </strong></p>
             
-        </details>
+       
 
     </div>
 </center>
