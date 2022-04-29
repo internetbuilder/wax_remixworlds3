@@ -8,7 +8,7 @@
     "limit": 50,
     "drops_contract": "neftyblocksd",
     "packs_contracts": ["atomicpacksx"],
-    "blend_contracts": ["blenderizerx", "nefty.blends"],
+    "blend_contracts": ["blenderizerx", "blend.nefty"],
     "telegram_link": "https://t.me/remixworlds",
     "discord_link": "",
     "twitter_link": "https://twitter.com/remixworlds/",

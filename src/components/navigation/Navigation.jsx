@@ -103,7 +103,7 @@ const Navigation = React.memo((props) => {
 </span>
 
 </Link>
-<Link href={'/faq'}>
+<Link href={'/ranking'}>
 
 <span className={cn(
 
@@ -113,7 +113,7 @@ const Navigation = React.memo((props) => {
 
 )}>
 
-    Docs
+    Ranking
 
 </span>
 

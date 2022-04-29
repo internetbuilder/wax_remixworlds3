@@ -7,7 +7,7 @@ const CollectionDetails = (props) => {
 
     const { name, collection_name, data, market_fee } = collection
 
-    const { url, description } = data
+    const { url, description, volume, listings, sales } = data
 
     return (
         <div className={cn('lg:px-10', 'text-base text-neutral')}>
@@ -22,6 +22,18 @@ const CollectionDetails = (props) => {
                     <tr>
                         <td className="text-neutral text-left">Market Fee:</td>
                         <td className="text-neutral text-right">{market_fee * 100}%</td>
+                    </tr>
+                    <tr>
+                        <td className="text-neutral text-left">Volume:</td>
+                        <td className="text-neutral text-right">{volume}</td>
+                    </tr>
+                    <tr>
+                        <td className="text-neutral text-left">Listings:</td>
+                        <td className="text-neutral text-right">{listings}</td>
+                    </tr>
+                    <tr>
+                        <td className="text-neutral text-left">Sales:</td>
+                        <td className="text-neutral text-right">{sales}</td>
                     </tr>
                     <tr>
                         <td className="text-neutral text-left">Website:</td>
@@ -64,14 +76,17 @@ const CollectionDetails = (props) => {
                             <td className="text-neutral text-left"></td>
                             <td className="text-neutral text-right">
                                 <div className="CollectionURL">
-                                    
+                                
                                 </div>
                             </td>
                         </tr>
                     ) : null}
                 </tbody>
+                
             </table>
+            
         </div>
+        
     )
 }
 

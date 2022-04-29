@@ -349,7 +349,7 @@ export const AssetCard = (props) => {
                     >
                         {name ? name : asset_id} <br /><br />
                         <strong>Vote: {template.immutable_data.vote}</strong><br /><br />
-                        (if you stake this asset, you will claim {template.immutable_data.vote} x 0.01 RMX per 24H)
+                        (if you stake this asset, you will claim {template.immutable_data.vote} x 0.01 RMX additional per 24H)
                     </p>
                     {frontVisible ? <div className="absolute -top-3 left-22">{mintInfo}</div> : ''}
                 </div>

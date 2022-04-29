@@ -24,7 +24,7 @@ const CollectionComponent = ({ collection }) => {
     } = collection
 
     const image = config.ipfs + img
-    const title = `Check out ${name}`
+    const title = `${name}`
 
     const [showScrollUpIcon, setShowScrollUpIcon] = useState(false)
 
@@ -70,6 +70,7 @@ const CollectionComponent = ({ collection }) => {
                 </div>
             </div>
             {showScrollUpIcon ? <ScrollUpIcon onClick={scrollUp} /> : null}
+            
         </Page>
     )
 }

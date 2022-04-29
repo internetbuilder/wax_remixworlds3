@@ -246,10 +246,8 @@ export default function MarketButtons(props) {
 
         const buyField = (
             <Container className={cn('flex flex-col')}>
-                <div className="relative py-0 px-1 text-md w-full">{formattedPrice}</div>
-                <AssetButton className="relative text-center mx-auto top-0 left-0" onClick={buy}>
-                    
-                </AssetButton>
+                <div className="relative py-0 px-1 text-md w-full">DONE</div>
+                
             </Container>
         )
 
@@ -371,7 +369,6 @@ export default function MarketButtons(props) {
                 ) : (
                     <Container className={cn('flex flex-col')}>
                         <div className="relative py-0 px-1 text-md w-full">{formattedPrice}</div>
-                        <CheckIndicator /> 
                     </Container>
                 )}
                 {!isLoading && (error || popError) ? (

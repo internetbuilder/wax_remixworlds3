@@ -41,7 +41,7 @@ function MyPacksList(props) {
 
     return (
         <div className={cn('w-full grid grid-cols-8 gap-10')}>
-            xxx<div className={cn('col-span-8 sm:col-span-8')}>
+            <div className={cn('col-span-8 sm:col-span-8')}>
                 <Pagination items={assets && assets.data} page={page} setPage={setPage} />
                 {isLoading ? (
                     <LoadingIndicator />

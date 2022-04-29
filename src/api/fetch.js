@@ -447,7 +447,7 @@ export const getCollectionData = (collections) =>
 export const getAccountStats = createTableGetter(
     (/** @type {string} */ user, /** @type {string} */ dropID) => ({
         json: true,
-        code: 'neftyblocksd',
+        code: 'freecitygamx',
         scope: user,
         table: 'accstats',
         table_key: '',
