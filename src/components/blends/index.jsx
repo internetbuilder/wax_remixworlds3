@@ -43,6 +43,7 @@ export const Blends = (props) => {
         <Page>
             <Content>
                 <div className="container mx-auto">
+                <center><strong><font color="red">Application Alpha Version In Live Developement</font></strong></center>
                     {!ual.activeUser ? (
                         <LoginWindow />
                     ) : (
