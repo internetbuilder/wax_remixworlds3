@@ -57,12 +57,12 @@ All prices here are approximate and above all can change depending on the market
 <br />
 <div class="text wrap">
 <center>
-<p><strong>How to play ?</strong></p>
+<h3><strong>How to play ?</strong></h3>
     <div>
 
         
             <summary>Blend NFT card to generate higher value cards.</summary>
-            <p><strong>To blend your NFT card you go to <a href="/blends" className="text-neutral bg-paper border-neutral">Your Blender</a> page and select the NFT card you want generate.<br />
+            <p><strong>To blend your NFT card you go to <a href="/blends" className="text-neutral bg-paper border-neutral">PLAY</a> page and select the NFT card you want generate.<br />
              (Make sure you have the ingredients NFT cards to generate your target NFT card. 
             if not to <a href="https://wax.atomichub.io/market?collection_name=freecitygame&order=asc&schema_name=multiverse&sort=price&symbol=WAX"  target="_blank" className="text-neutral bg-paper border-neutral">buy it in the marketplace</a>)
             </strong></p>
@@ -71,12 +71,10 @@ All prices here are approximate and above all can change depending on the market
             <summary>Stake NFT card</summary>
             <p><strong>To stake your NFT card and claim your reward every 24 hours, you go to STAKE page and on any asset you can find the stake button.
             </strong></p>
-            <img src="/moreoption.png" alt="FreeCityGame"/>
-        
+        <br />
             <summary>Claim every 24h</summary>
-            <p><strong>To claim your reward every 24 hours, you go to the <a href="https://claim.remixworlds.com" target="_blank" className="text-neutral bg-paper border-neutral">CLAIM Tool</a>, you login and you use the claim button.
+            <p><strong>To claim your reward every 24 hours, you go to the <a href="/blends" className="text-neutral bg-paper border-neutral">PLAY</a> page, you go on CLAIM tab, you login and you use the claim button.
             </strong></p>
-            <img src="/moreoption.png" alt="FreeCityGame"/>
         
     </div>
 </center>

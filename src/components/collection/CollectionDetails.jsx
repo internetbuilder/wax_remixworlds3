@@ -82,9 +82,7 @@ const CollectionDetails = (props) => {
                         </tr>
                     ) : null}
                 </tbody>
-                
             </table>
-            
         </div>
         
     )

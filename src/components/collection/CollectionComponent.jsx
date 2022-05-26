@@ -67,7 +67,9 @@ const CollectionComponent = ({ collection }) => {
                     <div className="col-span-8 md:col-span-4">
                         <CollectionDetails collection={collection} />
                     </div>
+                    
                 </div>
+               
             </div>
             {showScrollUpIcon ? <ScrollUpIcon onClick={scrollUp} /> : null}
             
