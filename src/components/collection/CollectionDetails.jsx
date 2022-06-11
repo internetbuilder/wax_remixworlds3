@@ -56,6 +56,10 @@ const CollectionDetails = (props) => {
                         <td className="text-neutral text-right"> <a href="https://wax.atomichub.io/market?collection_name=freecitygame" target="_blank">freecitygame</a></td>
                     </tr>
                     <tr>
+                        <td className="text-neutral text-left">NeftyBlocks Marketplace:</td>
+                        <td className="text-neutral text-right"> <a href="https://neftyblocks.com/c/freecitygame" target="_blank">freecitygame</a></td>
+                    </tr>
+                    <tr>
                         <td className="text-neutral text-left">Bloks Collection:</td>
                         <td className="text-neutral text-right"> <a href="https://wax.bloks.io/account/freecitygame" target="_blank">freecitygame</a></td>
                     </tr>

@@ -199,8 +199,7 @@ const Navigation = React.memo((props) => {
                                                             </span>
                                                         </Link>
                                                 </Menu.Item>
-                                                {config.blend_contracts.length > 0 ? (
-                                                    <Menu.Item className={cn('mb-3')}>
+                                                <Menu.Item className={cn('mb-3')}>
                                                         <Link href={'/faq'}>
                                                             <span
                                                                 className={cn(
@@ -213,6 +212,23 @@ const Navigation = React.memo((props) => {
                                                                 )}
                                                             >
                                                                 DOCS
+                                                            </span>
+                                                        </Link>
+                                                    </Menu.Item>
+                                                {config.blend_contracts.length > 0 ? (
+                                                    <Menu.Item className={cn('mb-3')}>
+                                                        <Link href={'/affiliate'}>
+                                                            <span
+                                                                className={cn(
+                                                                    'pb-px',
+                                                                    'cursor-pointer',
+                                                                    'hover:text-primary transition-colors',
+                                                                    router.pathname.indexOf('/affiliate') > -1
+                                                                        ? 'border-b-2 border-primary'
+                                                                        : '',
+                                                                )}
+                                                            >
+                                                                AFFILIATION
                                                             </span>
                                                         </Link>
                                                     </Menu.Item>
