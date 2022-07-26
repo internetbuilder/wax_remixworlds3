@@ -65,29 +65,24 @@ const Inventory = (props) => {
 
     const description = `Check out ${user}'s Inventory on ${config.market_title}`
 
+    
+
     return (
         <Page onScroll={(e) => handleScroll(e)} id="MarketPage">
             <Header title={title} description={description} image={config.market_image} />
             <MarketContent>
-                <div className={cn('w-full sm:1/3 md:w-1/4 md:ml-4 mx-auto p-0 md:p-5', 'max-w-filter')}>
-                    <Filters
-                        {...props}
-                        defaultSort="transferred_desc"
-                        sortOptions={[
-                            {
-                                value: 'transferred_desc',
-                                label: 'Received (Last)',
-                            },
-                            {
-                                value: 'transferred_asc',
-                                label: 'Received (First)',
-                            },
-                        ]}
-                    />
+            
+            <div className={cn('w-full sm:1/3 md:w-1/4 md:ml-4 mx-auto p-0 md:p-5', 'max-w-filter')}>
+                    
+            <img src="/new-logo-freecity.png" height="300px"></img>
+            <br />
+            <center><div><strong><a href="#">Stake</a> - <a href="#">Blend</a> - <a href="#">Market</a></strong>
+            <br />
+            <br /><p>Wallet</p><p>Claim RMX</p></div></center>
+                <br />
                 </div>
                 <div className={cn('w-full sm:2/3 md:w-3/4')}>
-                    <center>
-                        </center><Pagination items={assets && assets.data} page={page} setPage={setPage} />
+                    
                     {isLoading ? (
                         <LoadingIndicator />
                     ) : (

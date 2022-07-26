@@ -9,10 +9,7 @@ const internalLinks = [
         label: 'FreeCityGame',
         href: '/collection/freecitygame',
     },
-    {
-        label: 'Affiliation',
-        href: '/affiliate',
-    },
+    
 ]
 
 const companyLinks = [
